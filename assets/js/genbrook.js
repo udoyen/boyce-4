@@ -1,51 +1,33 @@
-$(document).ready(function () {
-    /*$('.my-click').popover({
-     title: "<h1><strong>HTML</strong> inside <code>the</code> <em>popover</em></h1>", 
-     content: "Blabla <br> <h2>Cool stuff!</h2>",
-     html: true, 
-     placement: "bottom",
-     trigger:'hover',
-     delay: {show:200, hide:2000}
-     });
-
-     $('.my-click').popover({
-     title: "<h1><strong>HTML</strong> inside <code>the</code> <em>popover</em></h1>", 
-     content: "Blabla <br> <h2>Cool stuff!</h2>",
-     html: true, 
-     placement: "bottom",
-     trigger:'focus',
-     delay: {show:200, hide:2000}
-     });*/
-
+$(document).ready(function(){
+   
+    
     // get width of window
     var w = $('#navcol-top').width();
-
+    
+    var timer;
     $('.my-click').on({
-        mouseenter: function () {
-            if (w > 425) {
-                $('ul#nav-wrapper').toggleClass("appear");
-            } else {
-                alert('wrong');
-
+       mouseenter: function(){
+           if(w > 425){
+               var self = this;
+               clearTimeout(timer);
+               timer = setTimeout(function(){
+                   $(self).children('ul#nav-wrapper').removeClass('appear');
+               }, 100)
+           }
+           
+       },
+        mouseleave: function(){
+            if( w > 425){
+                var self = this;
+            setTimeout(function(){
+                if(!$(self).children('ul#nav-wrapper').is(":hover")){
+                    $(self).children('ul#nav-wrapper').addClass('appear');
+                }
+            }, 100);
             }
-
-        },
-        hover: function () {
-            if (w > 425) {
-                $('ul#nav-wrapper').toggleClass("appear");
-            } else {
-                alert('wrong');
-
-            }
-        },
-        focus: function () {
-            if (w > 425) {
-                $('ul#nav-wrapper').toggleClass("appear");
-            } else {
-                alert('wrong');
-
-            }
+            
         }
-    })
-
+    });
+    
+   
 });
