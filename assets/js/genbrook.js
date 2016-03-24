@@ -1,7 +1,7 @@
 /// <reference path="../../typings/jquery/jquery.d.ts" />
 /// <reference path="jquery.visible.min.js" />
 
-$(document).ready(function(){
+$(document).ready(function($){
    
     
     // get width of window
