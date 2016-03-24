@@ -1,4 +1,5 @@
 /// <reference path="../../typings/jquery/jquery.d.ts" />
+/// <reference path="jquery.visible.min.js" />
 
 $(document).ready(function(){
    
@@ -32,29 +33,18 @@ $(document).ready(function(){
     });
     
    // $('#black-contact').isInViewport({tolerance: -50}).css('border', '3px solid #000000');
-    /*if($(window).scrollTop >= $('#port-col').height()){
+    /*if($(window).scrollTop() == 100){
         alert('we are here!');
     }*/
-
-    /*alert($('#port-col').height());
-    alert($(window).height());
-    alert($(document).height());
-    */
-
-    /*window.scrollBy(1338, 1338);
-        alert(window.pageXOffset);
-        alert(window.pageYOffset);
-*/
-
-    function navSlide() {
-        var scroll_top = $(window).scrollTop();
-
-        if(scroll_top >= 1338){
-            alert('we are here!');
-        }
-    }
-
-    $(window).scroll(navSlide);
+    
+    $.getScript('jquery.visible.min.js', function(){
+        
+       
+        
+    });
+   
+    
+    
     
    
     
