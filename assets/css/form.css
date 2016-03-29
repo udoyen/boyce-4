@@ -1,0 +1,138 @@
+input[type="text"], input[type="email"], input[type="tel"]{
+  width:300px;
+  border-radius:20px;
+  box-sizing:border-box;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea#comments, .form-group > select{
+  box-shadow:0px 0px 15px #82AD3D;
+  width:100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea#comments:focus, .form-group > select:focus{
+  box-shadow:0px 0px 1px #82AD3D;
+  border-color:#82AD3D;
+}
+
+select.form-control{
+  width:500px;
+  border-radius:20px;
+}
+
+#my-select{
+  padding-left:153px;
+}
+
+form .move-left{
+  padding-right:180px;
+}
+
+#c-left{
+  margin-left:-122px;
+}
+
+textarea#comments{
+  width:500px;
+}
+
+.modal-header, .modal-footer{
+  background:#82AD3D;
+}
+
+#mod-sub{
+  padding:10px;
+}
+
+.form-group col-sm-7{
+}
+
+@media (max-width:1024px) {
+  input[type="text"], input[type="email"], input[type="tel"]{
+    width:250px;
+  }
+}
+
+@media (max-width:1024px) {
+  form .move-left{
+    padding-right:10px;
+  }
+}
+
+@media (max-width:768px) {
+  form .move-left{
+    margin-left:-50px;
+  }
+}
+
+@media (max-width:768px) {
+  input[type="text"], input[type="email"], input[type="tel"]{
+    width:150px;
+  }
+}
+
+@media (max-width:768px) {
+  #c-left{
+    margin-left:-142px;
+  }
+}
+
+@media (max-width:768px) {
+  .form-group label{
+    font-size:1.3em;
+  }
+}
+
+@media (max-width:991px) {
+  #my-select{
+    padding-left:73px;
+  }
+}
+
+@media (max-width:991px) {
+  select.form-control{
+    width:300px;
+  }
+}
+
+@media (max-width:991px) {
+  textarea#comments{
+    width:400px;
+  }
+}
+
+@media (max-width:425px) {
+  input[type="text"], input[type="email"], input[type="tel"]{
+    width:100%;
+  }
+}
+
+@media (max-width:425px) {
+  #c-left{
+    margin-left:-32px;
+  }
+}
+
+@media (max-width:425px) {
+  textarea#comments{
+    width:100%;
+  }
+}
+
+@media (max-width:425px) {
+  #myModal{
+    width:100%;
+  }
+}
+
+@media (max-width:425px) {
+  #select-content{
+    margin-left:-91px;
+  }
+}
+
+@media (max-width:320px) {
+  select.form-control{
+    width:100%;
+  }
+}
+
