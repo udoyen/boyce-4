@@ -6,7 +6,7 @@
   top:63px;
   z-index:1200;
   width:180px;
-  background:#EEEEEE;
+  background:#b3ffb3;
   font-size:0.9em;
   font-weight:normal;
   border-bottom-left-radius:10px;
@@ -64,6 +64,28 @@
     left:-1px;
     -webkit-transition:all 0.2s;
     transition:all 0.2s;
+  }
+}
+
+@media (max-width:572px) {
+  #nav-wrapper{
+    position:static;
+    width:100%;
+    -webkit-transition:all 0.2s;
+    transition:all 0.2s;
+    border-radius:0;
+  }
+}
+
+@media (max-width:572px) {
+  #nav-wrapper li:last-child a{
+    border-radius:0;
+  }
+}
+
+@media (max-width:572px) {
+  #nav-wrapper li:last-child{
+    border-radius:0;
   }
 }
 

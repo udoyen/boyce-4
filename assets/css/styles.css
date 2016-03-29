@@ -107,6 +107,24 @@ hr{
   border-style:dashed;
 }
 
+.dropdown-menu > li > a:hover{
+  background:#82AD3D;
+  color:#ffffff;
+}
+
+.modal-footer #m-save{
+  background:#ffffff;
+  color:#000000;
+  box-sizing:border-box;
+}
+
+.modal-footer #m-save:focus, .modal-footer #m-save:hover{
+  color:#82AD3D;
+  border-color:#000000;
+  -webkit-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
 #find-div{
   text-align:center;
 }
@@ -146,7 +164,7 @@ section{
   width:100% !important;
 }
 
-#block-footer{
+#block-ft{
   text-align:center;
 }
 
@@ -239,6 +257,33 @@ section{
   padding-bottom:140px;
 }
 
+#map-btn{
+  text-align:center;
+  padding-top:20px;
+}
+
+.com-contact{
+  margin-top:12px;
+  margin-bottom:20px;
+  border-radius:40px;
+  background:#82AD3D;
+  border-color:#222222;
+  border-style:dashed;
+  font-family:'New Cycle', sans-serif;
+  font-size:2.5em;
+  padding:15px 60px;
+}
+
+.com-contact:hover, .com-contact:active{
+  color:#82AD3D;
+  border-style:dashed;
+  border-color:#ffffff;
+}
+
+.btn-default:focus, .btn-default.focus{
+  color:#82AD3D;
+}
+
 @media (max-width:800px) {
   #navcol-1 > ul.navbar-right > li{
     font-size:0.8em;
@@ -267,6 +312,8 @@ section{
 @media (max-width:425px) {
   div.navbar-header, .affix{
     padding-left:5px !important;
+    padding-top:5px !important;
+    padding-right:5px !important;
     margin-right:-15px!important;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;

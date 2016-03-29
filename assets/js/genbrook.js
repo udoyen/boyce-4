@@ -1,7 +1,6 @@
-/// <reference path="../../typings/jquery/jquery.d.ts" />
-/// <reference path="jquery.visible.min.js" />
+//$.noConflict();
 
-$(document).ready(function($){
+$(document).ready(function(){
    
     
     // get width of window
@@ -31,22 +30,6 @@ $(document).ready(function($){
             
         }
     });
-    
-   // $('#black-contact').isInViewport({tolerance: -50}).css('border', '3px solid #000000');
-    /*if($(window).scrollTop() == 100){
-        alert('we are here!');
-    }*/
-    
-    $.getScript('jquery.visible.min.js', function(){
-        
-       
-        
-    });
-   
-    
-    
-    
-   
     
    
 });

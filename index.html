@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/nav-sub.css">
+    <link rel="stylesheet" href="assets/css/featured.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 
 <body>
@@ -79,16 +83,16 @@
         <h1 class="text-center">FIND YOUR PLACE</h1>
         <hr>
         <blockquote>
-            <p class="text-center">Instantly find your desired place with your expected location, price and other criteria just by starting your search now </p>
-            <footer id="block-footer">Click Search Criteria</footer>
-        </blockquote>
+    <p class="text-center">Instantly find your desired place with your expected location, price and other criteria just by starting your search now </p>
+    <div id="block-ft"><span>&#8212;</span> Click Search Criteria</div>
+</blockquote>
     </section>
     <section class="d-color">
         <div class="container">
             <div class="panel-group">
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title"><a data-toggle="collapse" href="#collapse1">Search Criteria</a></h3></div>
+        <h3 class="panel-title"><a data-toggle="collapse" href="#collapse1">Click here to find your dream home...</a></h3></div>
     <div id="collapse1" class="panel-collapse collapse">
     <div class="panel-body">
         <div class="row" id="p-body">
@@ -154,7 +158,7 @@
         </div>
         <div class="row">
             <div class="col-md-12" id="find-div">
-                <button class="btn btn-default btn-xl btn-special" id="search-btn" type="submit">Find</button>
+                <button class="btn btn-default btn-xl com-contact" id="search-btn" type="submit">Find</button>
             </div>
         </div>
     </div>
@@ -272,63 +276,174 @@
                 <div class="container" id="contact">
                     <h1 class="text-center" id="contact-header">Let us meet at your convenience!</h1>
                     <hr>
-                    <button class="btn btn-default btn-xl" id="com-contact" type="button" data-toggle="modal" data-target="#myModal">CONTACT</button>
+                    <button class="btn btn-default com-contact" type="button" data-toggle="modal" data-target="#myModal">CONTACT US</button>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact-modal">
         <div class="modal fade" role="dialog" tabindex="-1" id="myModal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">Modal Title</h4></div>
+                        <h4 class="text-center modal-title">CONTACT FORM</h4>
+                    </div>
                     <div class="modal-body">
-                        <p>The content of your modal.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="container">
+                                    <form method="post" enctype="application/x-www-form-urlencoded" class="form-horizontal" role="form">
+                                        <div class="col-sm-10 move-left">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="firstname">First Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" type="text" name="firstname" required="" placeholder="First Name:" id="firstName">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="lastname">Last Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" type="text" name="lastname" required="" placeholder="Last Name:" id="lastName">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10 move-left">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="phonenumber">Phone Number:</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" type="tel" name="phonenumber" placeholder="Phone Number:" id="phoneNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-4" for="email">Email:</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="form-control" type="email" name="email" required="" placeholder="Email:" id="my-email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="select-content" class="col-sm-12">
+                                            <div id="my-select" class="col-sm-12">
+                                                <div class="form-group">
+                                                    <select class="form-control" readonly="" required="">
+                                                        <optgroup label="I (we) want to ..">
+                                                            <option value="1" selected="">buy</option>
+                                                            <option value="2">sell</option>
+                                                            <option value="3">discuss</option>
+                                                            <option value="4">meet</option>
+                                                            <option value="5">other</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="c-left" class="col-sm-10 move-left">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-4" for="comments">Comments:</label>
+                                                <div class="col-sm-8">
+                                                    <textarea class="form-control" rows="10" name="my-comments" placeholder="What ca we do for you?" id="comments"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-default btn-lg com-contact" type="submit" id="mod-sub">SEND</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-                        <button class="btn btn-primary" type="button">Save</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="featured-properties">
-        <div class="container">
+        <div class="container f-block">
             <h1 id="featured-hd">Featured Properties<span id="text-right">Text</span></h1>
-            <div class="col-sm-7 col-xs-12" id="feature-img"><img src="assets/img/100062_silverlake.jpg" width="643" height="364" class="img-responsive"></div>
-            <div class="col-sm-5 col-xs-12" id="feature-content">
-                <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12" id="feature-img"><img src="assets/img/100062_silverlake.jpg" width="643" height="364" class="img-responsive img-main"></div>
+            <div class="col-md-5 col-sm-12 col-xs-12 feature-content">
+                <div class="row" id="content-right">
                     <div class="col-md-12 col-sm-12 col-xs-12" id="right-info">
-                        <h1><a href="http://wp.nootheme.com/citilights/properties/new-york-upper-west-side/">New York Upper West Side</a> </h1>
-                        <p>Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer, Great Light And Plenty Of Closet Space. In Addition, There... </p>
+                        <h1 class="featured-head-txt"><a href="http://wp.nootheme.com/citilights/properties/new-york-upper-west-side/">New York Upper West Side</a> </h1>
+                        <p class="featured-txt">Fantastic One Bedroom Facing East In This Amazing Trump Place Doorman Building. There Is A Large Kitchen, Washer And Dryer, Great Light And Plenty Of Closet Space. In Addition, There... </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2><strong>$200 /month</strong> </h2></div>
-                    <div class="col-md-6"></div>
+                <div class="row detail-block">
+    <div class="col-md-4 col-xs-4">
+        <div class="f-div"><span><i class="fa fa-home featured-icon"></i></span><p class="c-num">123sqft</p></div>
+    </div>
+    <div class="col-md-4 col-xs-4">
+        <div class="f-div"><span><i class="fa fa-umbrella featured-icon"></i></span><p class="c-num">1</p></div>
+    </div>
+    <div class="col-md-4 col-xs-4">
+        <div class="f-div"><span><i class="fa fa-bed featured-icon"></i></span><p class="c-num">1</p></div>
+    </div>
+</div>
+                <div class="row more">
+                    <div class="col-md-6 col-xs-6" id="pro-container">
+                        <div id="property-price">
+                            <span><span id="money">N200</span> /Month</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6" id="pro-details">
+                        <div id="more-details">
+                            <a href="#"><span>MORE DETAILS</span>  <i class="fa fa-arrow-circle-o-right fa-1x"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container-fluid">
+            <iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBTlTcDpxsZavuL-_rhb5DTJuGN6-keXwk&amp;q=128+Aba-owerri+Road+Aba%2C+Abia+state%2C+Nigeria&amp;zoom=11"></iframe>
+        </div>
+        <div id="map-btn" class="container">
+            <button class="btn btn-default com-contact" type="button" data-toggle="modal" data-target="#myModal">CONTACT US</button>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="#">Company<span>logo </span></a></h3>
+                <p class="links"><a href="#">Home</a><strong> · </strong>Product &amp; Services<strong>· </strong><a href="#">Our team</a><strong> · </strong><a href="#">Blog </a><strong> · </strong><a href="#">Careers </a><strong> · </strong><a href="#">About Us</a></p>
+                <p
+                class="company-name">GenBrooke © 2016 </p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">128 Aba-owerri Road Aba, Abia state </span> Nigeria</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +234000000000</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">support@genbrookecom</a></p>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+                <div class="social-links social-icons"><a href="#" id="facebook"><i class="fa fa-facebook"></i></a><a href="#" id="twitter"><i class="fa fa-twitter"></i></a><a href="#" id="linkedin"><i class="fa fa-linkedin"></i></a></div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/genbrook.js"></script>
-    <script src="assets/js/jquery.visible.min.js"></script>
-    <script>
-         if($('#black-contact').visible()){
-             
-            alert('true');
-        }
-    </script>
 </body>
 
 </html>
