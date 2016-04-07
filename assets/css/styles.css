@@ -48,22 +48,16 @@ h1{
   background:#ffffff !important;
 }
 
-ul.navbar-nav{
-}
-
-ul.navbar-nav > li{
-}
-
-ul.navbar-nav > li > a{
-}
-
 .affix{
   z-index:200;
   top:0;
   background:#ffffff;
   width:100%;
   border-radius:0 !important;
-  border-bottom:3px solid #EEEEEE !important;
+  box-shadow: 0 5px 10px #82AD3D;
+  -o-box-shadow: 0 5px 10px #82AD3D;
+  -moz-box-shadow: 0 5px 10px #82AD3D;
+  -webkit-box-shadow: 0 5px 10px #82AD3D;
   -webkit-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
 }
@@ -79,8 +73,7 @@ label{
 }
 
 .dropdown-menu{
-  border-style:dashed;
-  border-color:#222222;
+  border: dashed #222222;
 }
 
 .dropdown-menu > li > a{
@@ -93,8 +86,7 @@ label{
 }
 
 hr{
-  border-color:#82AD3D;
-  border-width:3px;
+  border: 3px #82AD3D;
   max-width:50px;
   margin-top:20px;
   margin-bottom:20px;
@@ -131,6 +123,9 @@ hr{
 
 #search-btn{
   border-radius:40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+
 }
 
 section{
